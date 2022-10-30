@@ -1,0 +1,46 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <container id="container">
+            <h1>Generate a
+            </h1>
+            <div id="second-text">random password</div>
+            <p>Never use an insecure password again </p>
+            <button id="Generate-btn" onclick=randPassGen()>Generate passwords</button>
+            <form>
+                <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="password-length"
+                      placeholder="Length"
+                    />
+                  </div>
+            </form>
+            <div id="line"></div>
+            <span id="span1"></span>
+            <button id="copy-click" onclick=handleClick(span1) title="copy-clickboard"></button>
+            <span id="span2"></span>
+            <button id="copy-click2" onclick=handleClick(span2) title="copy-clickboard"></button>
+            <!-- Rounded switch -->
+            
+            <label class="label-btn">With Number</label>
+            <label class="label-btn">With Spec Char</label> 
+            <label class="switch">
+            <input id="toggleswitch" type="checkbox" checked>
+            <span class="slider round"></span>
+            </label>
+
+
+            
+            <label class="switch">
+            <input id="toggleswitch2" type="checkbox" checked >
+            <span class="slider round"></span>
+            </label>
+            
+        </container>
+        <script src="index.js"></script>
+    </body>
+</html>
